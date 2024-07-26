@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Portfolio - showcasing my work and skills">
+    <meta name="keywords" content="portfolio, web developer, projects, skills">
+    <meta name="author" content="Karthikeyan G">
+    <title>Portfolio</title>
+    <style>
+        body {
+            background-image: radial-gradient(red, green, blue);
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            background-color: white;
+            opacity: 0.9;
+            color: black;
+            height: 50px;
+            margin: 0;
+            padding: 0;
+            margin-top: 0;
+        }
+
+        ul li {
+            line-height: 50px;
+        }
+
+        a {
+            color: rgb(113, 111, 131);
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(233, 16, 161);
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        #top, #about, #me, #skills, #dd, #contact {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #top {
+            background-color: white;
+            opacity: 0.9;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #top img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        #about {
+            background-color: aqua;
+            opacity: 0.9;
+            color: black;
+        }
+
+        #about p {
+            font-size: 1.5em;
+        }
+
+        #about button {
+            color: black;
+            background-color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, width 0.3s;
+        }
+
+        #about button:hover {
+            background-color: red;
+            width: 200px;
+        }
+
+        #me {
+            background-color: black;
+            color: white;
+        }
+
+        #me img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        #skills {
+            background-color: aqua;
+            opacity: 0.9;
+            color: black;
+        }
+
+        #skills p {
+            font-size: 1.5em;
+        }
+
+        #im {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 10px;
+            justify-items: center;
+        }
+
+        #im img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #dd {
+            background-color: aqua;
+            opacity: 0.9;
+            color: black;
+        }
+
+        #dd p {
+            font-size: 1.5em;
+        }
+
+        #project {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        #project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        #contact {
+            background-color: aqua;
+            color: black;
+        }
+
+        #contact p {
+            font-size: 1.2em;
+        }
+
+        #logo {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        #logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            ul {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+            }
+
+            #top p {
+                font-size: 1.5em;
+            }
+
+            #about p {
+                font-size: 1.2em;
+            }
+
+            #me p {
+                font-size: 1.2em;
+            }
+
+            #skills p {
+                font-size: 1.2em;
+            }
+
+            #dd p {
+                font-size: 1.2em;
+            }
+
+            #contact p {
+                font-size: 1.1em;
+            }
+
+            #project {
+                flex-direction: column;
+            }
+
+            #project img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <a href="#top"><li>HOME</li></a>
+        <a href="#me"><li>ABOUT</li></a>
+        <a href="#skills"><li>SKILL</li></a>
+        <a href="#dd"><li>PROJECT</li></a>
+        <a href="#contact"><li>CONTACT</li></a>
+    </ul>
+    <div id="top">
+        <img src="https://t3.ftcdn.net/jpg/03/77/85/04/360_F_377850455_Gk0rRBzegH6YX9SZK9YbgyYyLwrVb9zi.jpg" alt="Profile Picture">
+        <p>MUTHU VEERAPPAN</p>
+    </div>
+    <div id="about">
+        <p>
+            <span style="font-size: 2em;">Hi Everyone, I Am</span><br>
+            <span style="font-size: 2em;">Muthu Veerappan</span><br><br>
+            I am pursuing my second year in ECE at Sri Krishna College of Engineering and Technology in Coimbatore.<br><br>
+            <button>Download CV <img src="https://img.icons8.com/?size=50&id=4717&format=png" alt="CV Icon"></button>
+            <button>Learn More</button>
+        </p>
+        <img src="https://i.pinimg.com/originals/a1/a4/3d/a1a43dd10bd3bdaf3bb86fec376454a6.jpg" alt="MUTHU VEERAPPAN">
+    </div>
+    <div id="me">
+        <img src="https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg" alt="Web Developer">
+        <p>
+            <span style="font-size: 2em;">About me,</span><br><br>
+            I am a hard-working and driven individual who isn't afraid to face a challenge. I'm passionate about my work and I know how to get the job done. I would describe myself as an open and honest person who doesn't believe in misleading others and tries to be fair in everything I do.
+        </p>
+    </div>
+    <div id="skills">
+        <p><span style="font-size: 2em;">SKILLS</span><br>What I am capable of?</p>
+        <div id="im">
+            <img src="https://static.vecteezy.com/system/resources/previews/001/416/705/non_2x/html5-emblem-orange-shield-and-white-text-vector.jpg" alt="HTML5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3">
+            <img src="https://a0.anyrgb.com/pngimg/1262/278/html-comment-advertising-%D0%B2-js-logo-advertising-html-element-solution-stack-tests-page-footer-software-widget-comment-thumbnail.png" alt="JavaScript">
+            <img src="https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png" alt="Java">
+            <img src="https://w7.pngwing.com/pngs/579/803/png-transparent-the-c-programming-language-programmer-computer-programming-programming-blue-logo-computer-program.png" alt="C">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C++">
+            <img src="https://www.svgrepo.com/show/331760/sql-database-generic.svg" alt="SQL">
+            <img src="https://logowik.com/content/uploads/images/flutter5786.jpg" alt="Flutter">
+        </div>
+    </div>
+    <div id="dd">
+        <p><span style="font-size: 2em;">PROJECTS</span><br>What I have made?</p>
+        <div id="project">
+            <img src="https://1.bp.blogspot.com/-HEwNSIvdfN0/VBrwvvkyHAI/AAAAAAAAGBg/w2VN3jOya-c/s1600/image009.jpg" alt="Project 1">
+            <img src="https://i.ytimg.com/vi/HZ9jrj1WQmo/maxresdefault.jpg" alt="Project 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmyc3XhJsDnme3sWnAuRJQMdMPis3WchxJcQ&s" alt="Project 3">
+        </div>
+    </div>
+    <div id="contact">
+        <p>Contact</p>
+        <p style="font-size: 1.5em;">Get in touch</p>
+        <p>mlakshmananarun1222@gmail.com</p>
+        <div id="logo">
+            <a href="https://www.instagram.com/"><img src="https://wallpapercave.com/wp/wp7155488.jpg" alt="Instagram"></a>
+            <a href="https://x.com/?lang=en"><img src="https://www.shutterstock.com/shutterstock/videos/1063781164/thumb/5.jpg?ip=x480" alt="Twitter"></a>
+            <a href="https://in.linkedin.com/"><img src="https://img.freepik.com/premium-vector/square-linkedin-logo-isolated-white-background_469489-892.jpg" alt="LinkedIn"></a>
+            <a href="https://github.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfu1mi6LAfuv1HSVFYUtOVgBsIB5f96Ui_Xw&s" alt="GitHub"></a>
+        </div>
+        <footer>Copyright @ 2024. Developed and Designed by Muthu Veerappan</footer>
+    </div>
+</body>
+</html>
